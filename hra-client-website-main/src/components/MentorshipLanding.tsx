@@ -2,7 +2,7 @@ import { Button, Container, Box, Typography, Grid } from "@mui/material";
 import { BOOK_FREE_TRIAL_LINK } from "../constants";
 import VerifiedIcon from "../assets/verified.png";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { FaCode, FaDatabase, FaCodeBranch, FaCloud, FaTools } from "react-icons/fa";
+import { FaCode, FaDatabase, FaCodeBranch, FaCloud, FaTools, FaCar} from "react-icons/fa";
 import { GiNetworkBars } from "react-icons/gi";
 import { BiAnalyse } from "react-icons/bi";
 import { AiOutlineLayout } from "react-icons/ai";
@@ -60,6 +60,10 @@ const MentorshipLanding = () => {
       icon: <FaTools   />,
     },
     {
+      category: "Automotive Testing",
+      icon: <FaCar />,
+    },
+    {
       category: "Cloud Engineer",
       icon: <FaCloud />,
     },
@@ -80,7 +84,7 @@ const MentorshipLanding = () => {
       icon: <MdBusiness  />,
     }]
 
-    const mobileButtons= allButtons.slice(0, 4);
+    const mobileButtons= allButtons.slice(0, 5);
 
   return (
     <Box
